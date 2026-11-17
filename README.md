@@ -32,7 +32,7 @@ npx wrangler pages deploy . --project-name=momentos-infinitos
 
 ### Dominio propio
 
-En el proyecto de Pages → **Custom domains** → añade el dominio. Cuando esté, cambia en `index.html` las URLs relativas de `og:image` y del JSON-LD (`image`, `logo`) por absolutas (`https://dominio/assets/...`): Facebook y WhatsApp necesitan la URL completa para mostrar la vista previa.
+En el proyecto de Pages → **Custom domains** → añade el dominio. Cuando esté, cambia en `index.html` las URLs de `og:url`, `og:image` y del JSON-LD (`image`, `logo`) al nuevo dominio.
 
 ## Probar en local
 
@@ -49,5 +49,10 @@ Para la demo se han rellenado con datos ficticios pero verosímiles:
 - Aforo: **60 personas** y superficie: **150 m²** (`index.html`, JSON-LD y `js/main.js`).
 - FAQ: se puede traer comida, catering y tarta; montaje de la decoración antes del evento; sin confeti ni clavar en paredes; local en planta baja sin escalones.
 - Profesionales: wifi y enchufes repartidos por la sala.
-- `aviso-legal.html` y `privacidad.html`: NIF `B-98765432`, datos registrales y correo `hola@momentosinfinitos.es` son **inventados**.
+- `aviso-legal.html` y `privacidad.html`: falta el NIF real (`B-XXXXXXXX`) y, si lo tienen, un correo de contacto.
 - Fotos de montajes temáticos (dinosaurios, Halloween, cumple de 3 años): se usan fotos reales del local mientras tanto.
+
+## Antes de publicar la web definitiva
+
+- La demo lleva `noindex` para que Google no indexe datos de ejemplo: quitar la `<meta name="robots">` de `index.html` y la línea `X-Robots-Tag` de `_headers`.
+- Si cambia el dominio, actualizar las URLs absolutas de `og:url`, `og:image` y del JSON-LD (ahora apuntan a `https://minfinitos.pages.dev/`).
