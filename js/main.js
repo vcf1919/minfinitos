@@ -355,7 +355,7 @@
     }
     function updateTotal() {
       var t = num(ninos) + num(adultos);
-      $('#cfg-total').innerHTML = '<span>' + t + (t === 1 ? ' persona' : ' personas') + ' en total · Aforo máximo: <mark class="ph">[aforo]</mark></span>';
+      $('#cfg-total').innerHTML = '<span>' + t + (t === 1 ? ' persona' : ' personas') + ' en total · Aforo máximo: 60' + (t > 60 ? '. Para grupos más grandes, consúltanos.' : '') + '</span>';
       $$('[data-dec]', form).forEach(function (b) { b.disabled = num(b.getAttribute('data-dec') === 'ninos' ? ninos : adultos) <= 0; });
     }
     $$('[data-inc], [data-dec]', form).forEach(function (b) {

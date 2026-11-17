@@ -42,11 +42,12 @@ python3 -m http.server 8000
 
 y abre <http://localhost:8000>.
 
-## Pendiente de confirmar con el cliente
+## Datos de ejemplo (confirmar con Luis y Yolanda antes de publicar)
 
-Todo lo que no sabemos aparece marcado en la web con un recuadro amarillo rayado:
+Para la demo se han rellenado con datos ficticios pero verosímiles:
 
-- `[aforo]` y `[m²]`
-- Condiciones de comida/tarta propia, horarios de montaje, aseo adaptado y equipamiento para profesionales → `[confirmar con Luis y Yolanda]`
-- Aviso legal y privacidad
-- Fotos reales pendientes (montaje de dinosaurios, cumple de 3 años, Halloween…)
+- Aforo: **60 personas** y superficie: **150 m²** (`index.html`, JSON-LD y `js/main.js`).
+- FAQ: se puede traer comida, catering y tarta; montaje de la decoración antes del evento; sin confeti ni clavar en paredes; local en planta baja sin escalones.
+- Profesionales: wifi y enchufes repartidos por la sala.
+- `aviso-legal.html` y `privacidad.html`: NIF `B-98765432`, datos registrales y correo `hola@momentosinfinitos.es` son **inventados**.
+- Fotos de montajes temáticos (dinosaurios, Halloween, cumple de 3 años): se usan fotos reales del local mientras tanto.
