@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-256 -290 512 518" role="img" aria-label="Momentos Infinitos">
+  <defs>
+    <g id="f">
+      <circle cx="0" cy="-238" r="44"/>
+      <path d="M128 -92C160 -128 150 -192 104 -206C62 -219 24 -204 0 -172C-24 -204 -62 -219 -104 -206C-152 -191 -160 -128 -126 -88C-100 -58 -64 -34 -38 -12" fill="none" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <use href="#f" fill="#EDC08F" stroke="#EDC08F"/>
+  <use href="#f" fill="#9FCBE6" stroke="#9FCBE6" transform="rotate(120)"/>
+  <use href="#f" fill="#F2A3A0" stroke="#F2A3A0" transform="rotate(240)"/>
+</svg>
